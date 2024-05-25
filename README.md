@@ -51,7 +51,8 @@ public static boolean checkCart(List<Item> allItems, int payment){
 
 //////////////////////////////////////////////////////////
 Ova e kodot oznacen so reden broj na sekoj red, za nego podolu e daden Control Flow Grafot. 
-![](C:\Users\Dragana Trifunova\Documents\softversko\SI_lab2_223044\softversko_datagram.png)
+![softversko_datagram](https://github.com/draganatrifunova/SI_2024_lab2_223044/assets/138613966/2165d271-89fe-4113-a8e9-4933a03a8bc1)
+
 ///////////////////////////////////////////////////////
 Ciklomatskata kompleksnost e:
 
