@@ -51,10 +51,12 @@ public static boolean checkCart(List<Item> allItems, int payment){
 
 //////////////////////////////////////////////////////////
 Ova e kodot oznacen so reden broj na sekoj red, za nego podolu e daden Control Flow Grafot. 
+===========================================================================================
 ![softversko_datagram](https://github.com/draganatrifunova/SI_2024_lab2_223044/assets/138613966/2165d271-89fe-4113-a8e9-4933a03a8bc1)
 
 ///////////////////////////////////////////////////////
 Ciklomatskata kompleksnost e:
+=============================
 
 ciklomatska_kompleksnost = broj na rebra - broj na jazli + 2
 ciklomatska_kompleksnost = 35 - 28 + 2 = 9 
@@ -63,46 +65,47 @@ Ciklomatskata kompleksnost e 9
 
 
 Every Branch
+============
 Podolu se dadeni site rebra koi se vo Every Branch grafot
 
-1-2  Test 1
-1-3   Test2   Test 3   Test 4   Test 5
-3-4.1  Test 2   Test 3   Test 4   Test 5
-4.1-4.2   Test 2   Test 3    Test 4   Test 5
-4.2-5    Test 2    Test 3   Test 4    Tets 5
-4.2-21   Test 4   Test 5
-2-24  Test 1
-5-6   Test 2    Test 3  Test 4  Test 5
-6-8   Test 3  Test 4   Test 5
-6-7   Test 2
-7-8   Test 2
-8-18   Test 2
-8-9    Test 3    Test 4   Test 5
-9-10   Test 3    Test 4    Test 5
-18-24   Test 2
-10-11.1  Test 3   Test 4   Test 5
-11.1-11.2   Test 3   Test 4   Test 5 
-11.2-12   Test 3  Test 4   Test 5
-12-13   Test 3   Test 4  Test 5
-13-14   Test 3
-13-15  Test 3   Test 4   Test 5
-15-11.3   Test 3  Test 4   Test 5
-11.3-11.2   Test 3   Test 4  Test 5
-11.2-15    Test 4   Test 5
-15-16    Test  4
-15-17    Test 5
-17-19    Test 5
-16-19   Test 4
-19-20   Test 4
-19-21   Test 5
-20-21   Test 4
-21-4.3   Test 4  Test 5
-21-23    Test 5
-21-22    Test 4
-23-24    Test 5
-22-24    Test 4
-4.3-4.2    Test 4   Test 5
-14-24   Test 3
+1-2  Test 1  
+1-3   Test2   Test 3   Test 4   Test 5  
+3-4.1  Test 2   Test 3   Test 4   Test 5  
+4.1-4.2   Test 2   Test 3    Test 4   Test 5   
+4.2-5    Test 2    Test 3   Test 4    Tets 5   
+4.2-21   Test 4   Test 5  
+2-24  Test 1   
+5-6   Test 2    Test 3  Test 4  Test 5   
+6-8   Test 3  Test 4   Test 5   
+6-7   Test 2   
+7-8   Test 2   
+8-18   Test 2   
+8-9    Test 3    Test 4   Test 5   
+9-10   Test 3    Test 4    Test 5   
+18-24   Test 2   
+10-11.1  Test 3   Test 4   Test 5   
+11.1-11.2   Test 3   Test 4   Test 5    
+11.2-12   Test 3  Test 4   Test 5   
+12-13   Test 3   Test 4  Test 5   
+13-14   Test 3   
+13-15  Test 3   Test 4   Test 5   
+15-11.3   Test 3  Test 4   Test 5   
+11.3-11.2   Test 3   Test 4  Test 5   
+11.2-15    Test 4   Test 5   
+15-16    Test  4   
+15-17    Test 5   
+17-19    Test 5   
+16-19   Test 4   
+19-20   Test 4   
+19-21   Test 5   
+20-21   Test 4   
+21-4.3   Test 4  Test 5   
+21-23    Test 5   
+21-22    Test 4   
+23-24    Test 5   
+22-24    Test 4   
+4.3-4.2    Test 4   Test 5   
+14-24   Test 3   
 
 
 
@@ -125,7 +128,7 @@ else {
 Sega za da vlezeme vo if-ot ni treba Test 4 a, za da vlezeme vo else-ot ni treba Test 5.
 
 So ova go pokrivme minimalniot broj na testovi vo Every Branch Metodot.
-================================
+******************************
 Test 1
 allItems = null
 payment = anything
@@ -158,16 +161,17 @@ sum > payment
 sum = 100
 payment = 50
 getPrice = 100
-================================
+*************************************
 
 ////////////////////////////////////////////////////
 Multiple Condition
+==================
 
 if (item.getPrice() > 300 && item.getDiscount() > 0 && item.getBarcode().charAt(0) == '0')
 
 Mozni se 4 test slucai:
 
-F X X (prvoto da e netocno a, drugite 2 da se bilo sto)   item.getPrice() = 200, item.getDiscount() = 5,  item.getBarcode().charAt(0) == '4'    --->	FALSE
-T F X (prvoto tocno, vtoroto netocno a, tretoto bilo sto)  item.getPrice() = 500, item.getDiscount() = -5,  item.getBarcode().charAt(0) == '4'  --->	FALSE
-T T F (prvite 2 tocni a poslednoto netocno)  item.getPrice() = 500, item.getDiscount() = 5,  item.getBarcode().charAt(0) == '4'            ---->     	FALSE
-T T T (site tocni)  item.getPrice() = 700, item.getDiscount() = 5,  item.getBarcode().charAt(0) == '0'                           ------>               	TRUE
+F X X (prvoto da e netocno a, drugite 2 da se bilo sto)   item.getPrice() = 200, item.getDiscount() = 5,  item.getBarcode().charAt(0) == '4'    --->	FALSE   
+T F X (prvoto tocno, vtoroto netocno a, tretoto bilo sto)  item.getPrice() = 500, item.getDiscount() = -5,  item.getBarcode().charAt(0) == '4'  --->	FALSE   
+T T F (prvite 2 tocni a poslednoto netocno)  item.getPrice() = 500, item.getDiscount() = 5,  item.getBarcode().charAt(0) == '4'            ---->     	FALSE   
+T T T (site tocni)  item.getPrice() = 700, item.getDiscount() = 5,  item.getBarcode().charAt(0) == '0'                           ------>               	TRUE   
