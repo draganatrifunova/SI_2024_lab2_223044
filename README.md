@@ -4,8 +4,8 @@
 *
 */
 
-
-
+```markdown
+```java
 public static boolean checkCart(List<Item> allItems, int payment){
         if (allItems == null){ //1
             throw new RuntimeException("allItems list can't be null!"); //2
@@ -48,20 +48,21 @@ public static boolean checkCart(List<Item> allItems, int payment){
             return false;  //23
         }
     } //24
+```
+```
 
-//////////////////////////////////////////////////////////
+
 Ova e kodot oznacen so reden broj na sekoj red, za nego podolu e daden Control Flow Grafot. 
 ===========================================================================================
 ![softversko_datagram](https://github.com/draganatrifunova/SI_2024_lab2_223044/assets/138613966/2165d271-89fe-4113-a8e9-4933a03a8bc1)
 
-///////////////////////////////////////////////////////
-Ciklomatskata kompleksnost e:
+
+Ciklomatska kompleksnost
 =============================
 
 ciklomatska_kompleksnost = broj na rebra - broj na jazli + 2
 ciklomatska_kompleksnost = 35 - 28 + 2 = 9 
 Ciklomatskata kompleksnost e 9
-/////////////////////////////////////////////////////////
 
 
 Every Branch
@@ -163,7 +164,7 @@ payment = 50
 getPrice = 100
 *************************************
 
-////////////////////////////////////////////////////
+
 Multiple Condition
 ==================
 
