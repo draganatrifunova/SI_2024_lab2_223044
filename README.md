@@ -49,7 +49,7 @@ public static boolean checkCart(List<Item> allItems, int payment){
         }
     } //24
 ```
-```
+
 
 
 Ova e kodot oznacen so reden broj na sekoj red, za nego podolu e daden Control Flow Grafot. 
