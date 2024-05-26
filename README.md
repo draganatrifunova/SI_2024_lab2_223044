@@ -60,9 +60,9 @@ Ova e kodot oznacen so reden broj na sekoj red, za nego podolu e daden Control F
 Ciklomatska kompleksnost
 =============================
 
-ciklomatska_kompleksnost = broj na rebra - broj na jazli + 2
-ciklomatska_kompleksnost = 35 - 28 + 2 = 9 
-Ciklomatskata kompleksnost e 9
+ciklomatska_kompleksnost = broj na rebra - broj na jazli + 2   
+ciklomatska_kompleksnost = 35 - 28 + 2 = 9    
+Ciklomatskata kompleksnost e 9   
 
 
 Every Branch
@@ -130,38 +130,38 @@ Sega za da vlezeme vo if-ot ni treba Test 4 a, za da vlezeme vo else-ot ni treba
 
 So ova go pokrivme minimalniot broj na testovi vo Every Branch Metodot.
 ******************************
-Test 1
-allItems = null
-payment = anything
+Test 1   
+allItems = null   
+payment = anything   
 
-Test 2
-Item 1
-Name = null
-barcode = null
-ostanatite vrednosti mozat da bidat bilo koi
+Test 2   
+Item 1   
+Name = null   
+barcode = null   
+ostanatite vrednosti mozat da bidat bilo koi   
 
-Test 3
-name = thirdItem
-barcode = 1a9b8
-ostanatite vrednosti mozat da bidat bilo koi
+Test 3   
+name = thirdItem   
+barcode = 1a9b8   
+ostanatite vrednosti mozat da bidat bilo koi   
 
-Test 4
-name = fourthItem
-barcode = 018654
-getDiscount = 5
-getPrice = 400
-sum <= payment
-sum =1970
-payment = 5000
+Test 4   
+name = fourthItem   
+barcode = 018654   
+getDiscount = 5   
+getPrice = 400   
+sum <= payment    
+sum =1970   
+payment = 5000   
 
-Test5
-name = FifthItem
-barcode = 8435455
-discount = -5
-sum > payment
-sum = 100
-payment = 50
-getPrice = 100
+Test5      
+name = FifthItem   
+barcode = 8435455   
+discount = -5   
+sum > payment   
+sum = 100   
+payment = 50   
+getPrice = 100   
 *************************************
 
 
